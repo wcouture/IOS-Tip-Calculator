@@ -7,6 +7,8 @@
 
 import UIKit
 
+var currencyIndex = 0
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var billAmountTextField: UITextField!
@@ -25,42 +27,68 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tipCurrentPercentageLabel: UILabel!
     
-    @IBOutlet weak var currencyControl: UISegmentedControl!
-    
     var total = 0.0
     var bill = 0.0
     var tip = 0.0
     var currency = "$"
     
+    var tipPercentage: Float = 10.0
+    var taxPercentage: Float = 5.0
+    var tax: Double = 0.0
+    
     let currencies = ["$", "€", "£", "¥"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tipControl.value = tipPercentage
+        taxPercentageSlider.value = taxPercentage
         // Do any additional setup after loading the view.
     }
-
-    @IBAction func updateCurrency(_ sender: Any) {
-        currency = currencies[currencyControl.selectedSegmentIndex]
-        UpdateUI(self)
+    
+    override func viewDidAppear(_ animated: Bool) {
+        UpdateUI()
     }
     
-    @IBAction func UpdateUI(_ sender: Any) {
+    @IBAction func CalculateTip(_ sender: Any) {
         bill = Double(billAmountTextField.text!) ?? 0
-        let taxPercentage = Double(taxPercentageSlider.value)
-        let tax = bill * taxPercentage / 100.0
+        taxPercentage = taxPercentageSlider.value
+        tax = bill * Double(taxPercentage) / 100.0
         bill = bill + tax
         
-        let tipPercentage = tipControl.value
+        tipPercentage = tipControl.value
         tip = bill * Double(tipPercentage) / 100.0
         total = bill + tip
         
+        UpdateUI()
+    }
+    
+    func UpdateUI() {
+        
         tipCurrentPercentageLabel.text = String(format:"%.2f", tipPercentage) + "%"
         
-        tipAmountLabel.text = currency + String(format:"%.2f", tip)
+        tipAmountLabel.text = currencies[currencyIndex] + String(format:"%.2f", tip)
         taxCurrentPercentageLabel.text = String(format: "%.2f", taxPercentage) + "%"
-        taxTotalLabel.text = currency + String(format:"%.2f", tax)
+        taxTotalLabel.text = currencies[currencyIndex] + String(format:"%.2f", tax)
         
-        totalLabel.text = currency + String(format: "%.2f", total)
+        totalLabel.text = currencies[currencyIndex] + String(format: "%.2f", total)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        billAmountTextField.resignFirstResponder()
+    }
+}
+
+class Currency : UIViewController{
+    
+    @IBOutlet weak var CurrencyControl: UISegmentedControl!
+    
+    override func viewDidLoad(){
+        super.viewDidLoad()
+    }
+    
+    
+    @IBAction func UpdateCurrency(_ sender: Any) {
+        currencyIndex = CurrencyControl.selectedSegmentIndex
     }
 }
 
