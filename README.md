@@ -29,7 +29,7 @@ Here's a walkthrough of implemented user stories:
 ![](https://i.imgur.com/32oShV7.gif)
 
 
-GIF created with [QuickTime].
+GIF created with [QuickTime](https://support.apple.com/kb/DL837?locale=en_US) and [ezgif](https://ezgif.com/video-to-gif).
 
 ## Notes
 
