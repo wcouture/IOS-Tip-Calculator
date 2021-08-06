@@ -27,6 +27,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tipCurrentPercentageLabel: UILabel!
     
+    @IBOutlet weak var billCurrencyLabel: UILabel!
+    
     var total = 0.0
     var bill = 0.0
     var tip = 0.0
@@ -42,10 +44,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         tipControl.value = tipPercentage
         taxPercentageSlider.value = taxPercentage
+        
         // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        billAmountTextField.becomeFirstResponder()
         UpdateUI()
     }
     
@@ -63,6 +67,7 @@ class ViewController: UIViewController {
     }
     
     func UpdateUI() {
+        billCurrencyLabel.text = currencies[currencyIndex]
         
         tipCurrentPercentageLabel.text = String(format:"%.2f", tipPercentage) + "%"
         

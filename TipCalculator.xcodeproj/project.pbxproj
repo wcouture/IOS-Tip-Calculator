@@ -15,6 +15,7 @@
 		39DCAF6F26B72BB10047FAC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39DCAF6D26B72BB10047FAC5 /* LaunchScreen.storyboard */; };
 		39DCAF7A26B72BB10047FAC5 /* TipCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DCAF7926B72BB10047FAC5 /* TipCalculatorTests.swift */; };
 		39DCAF8526B72BB10047FAC5 /* TipCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39DCAF8426B72BB10047FAC5 /* TipCalculatorUITests.swift */; };
+		39E3724026BDA838002DFC4F /* calculator.png in Resources */ = {isa = PBXBuildFile; fileRef = 39E3723F26BDA838002DFC4F /* calculator.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		39DCAF8026B72BB10047FAC5 /* TipCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		39DCAF8426B72BB10047FAC5 /* TipCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorUITests.swift; sourceTree = "<group>"; };
 		39DCAF8626B72BB10047FAC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39E3723F26BDA838002DFC4F /* calculator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calculator.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				39DCAF6426B72BB00047FAC5 /* SceneDelegate.swift */,
 				39DCAF6626B72BB00047FAC5 /* ViewController.swift */,
 				39DCAF6826B72BB00047FAC5 /* Main.storyboard */,
+				39E3723F26BDA838002DFC4F /* calculator.png */,
 				39DCAF6B26B72BB10047FAC5 /* Assets.xcassets */,
 				39DCAF6D26B72BB10047FAC5 /* LaunchScreen.storyboard */,
 				39DCAF7026B72BB10047FAC5 /* Info.plist */,
@@ -234,6 +237,7 @@
 				39DCAF6F26B72BB10047FAC5 /* LaunchScreen.storyboard in Resources */,
 				39DCAF6C26B72BB10047FAC5 /* Assets.xcassets in Resources */,
 				39DCAF6A26B72BB00047FAC5 /* Main.storyboard in Resources */,
+				39E3724026BDA838002DFC4F /* calculator.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

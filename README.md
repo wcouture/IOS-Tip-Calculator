@@ -4,30 +4,32 @@ Tip Calculator is a tip calculator application for iOS.
 
 Submitted by: Will Couture
 
-Time spent: 1 hours spent in total
+Time spent: 4 hours spent in total
 
 ## User Stories
 
 The following **required** functionality is complete:
 
 * [ ] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
-* [ ] User can select between tip percentages by tapping different values on the segmented control and the tip value is updated accordingly
+* [ ] User can choose a tip percentage on a slide bar
 
 The following **optional** features are implemented:
+* [ ] The input field in automatically selected once opened
 
 The following **additional** features are implemented:
 
 * [ ] User can select a tax percentage and calculate the cost of tax
-* [ ] User can select from four different currencies
+* [ ] User can select from four different currencies on a separate page within the app
 
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="6fiBfnQ" data-context="false" ><a href="//imgur.com/6fiBfnQ">Tip Calculator</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+![](https://i.imgur.com/32oShV7.gif)
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
+GIF created with [QuickTime].
 
 ## Notes
 
@@ -48,3 +50,5 @@ I was originally unable to test the functionality of the program due to the spri
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+
+
