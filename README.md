@@ -29,11 +29,7 @@ Here's a walkthrough of implemented user stories:
 ![](https://i.imgur.com/32oShV7.gif)
 
 
-GIF created with [QuickTime](https://support.apple.com/kb/DL837?locale=en_US) and [ezgif](https://ezgif.com/video-to-gif).
-
-## Notes
-
-I was originally unable to test the functionality of the program due to the springboard quitting each time I tried running the program. I was able to find a fix online disabling certain settings using command line.
+GIF created with [QuickTime](https://support.apple.com/kb/DL837?locale=en_US) and [ezgif](https://ezgif.com/video-to-gif).ß
 
 ## License
 
